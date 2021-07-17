@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Titre</title>
+        <title>Reservia</title>
         </head>
 
         <body>
+            <!----Le header du site contenant le logo et les liens de navigaton(ancres)---->
             <header>
                 <img src="images/logo/Reservia@3x.png" alt="Logo"/>
                 <nav>
@@ -13,6 +14,17 @@
                     <a href="#Activités">#Activités</a>
                     <a href="page_inscription.html">S'inscrire</a>
                 </nav>
+                <!--La premiere section contenant le titre de la page et un formulaire de recherche avec des bouton filtres-->
+            <section>
+                <h1>Trouvez votre hébergements pour des vacances de reve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                        <form method="POST" action="traitement.php">
+                            <input type="text" name="Recherche ville" value="Marseille,France"/>
+                            <input type="submit" value="Rechercher"/>
+                            
+                        </form>
+                
+            </section>
             </header>
 
         </body>
