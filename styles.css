@@ -1,0 +1,72 @@
+#logo
+{
+    width: 97px;
+    height: 45px;
+    padding-top: 20px;
+
+}
+
+body
+{
+    font-family:  'Raleway', sans-serif;
+}
+
+#conteneur
+{
+    display: flex; 
+    justify-content: space-between;
+    height: 20px;
+    width: 300px;
+    margin-top: -30px;
+    font-size: 12px;
+    margin-left: 990px;
+    
+    
+    
+ 
+}
+
+.element1
+{
+    
+    font-weight: 600;   
+    
+}
+
+.element2
+{     
+    font-weight: 600; 
+}
+
+.element3
+{  
+    font-weight: 800;   
+ 
+}
+
+a
+{
+    text-decoration: none; 
+}
+
+.link_ancre_hebergement, .link_ancre_activités
+{
+    color: black;   
+}
+
+.link_inscription
+{
+    color: #0065fc;
+}
+
+.element1 :hover
+{
+    color: #0065fc;
+    font-weight: bold;
+}
+
+.element2 :hover
+{
+    color: #0065fc;
+    font-weight:bold;
+}
