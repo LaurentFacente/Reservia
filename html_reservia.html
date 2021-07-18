@@ -4,40 +4,31 @@
         <meta charset="utf-8" />
         <script src="https://kit.fontawesome.com/d2e8ae8546.js" crossorigin="anonymous"></script>
         <title>Trouvez votre hébergements pour des vacances de reve !</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
-
         <body>
             <!----Le header du site contenant le logo et les liens de navigaton(ancres)---->
             <header>
-                <img src="images/logo/Reservia@3x.png" alt="Logo"/>
                 <nav>
-                    <a href="#Hébergements">#Hébergements</a> 
-                    <a href="#Activités">#Activités</a>
-                    <a href="page_inscription.html">S'inscrire</a>
+                <a href="html_reservia.html">
+                <img src="images/logo/Reservia@3x.png" id="logo" alt="Logo"/>
+                </a>
+                   <div id="conteneur"> 
+                    <div class="element1"><a class="link_ancre_hebergement" href="#Hébergements">Hébergements</a></div>                
+                    <div class="element2"><a class="link_ancre_activités" href="#Activités">Activités</a></div>
+                    <div class="element3"><a class="link_inscription" href="page_inscription.html">S'inscrire</a></div>
+                   </div>
                 </nav>
-                <!--La premiere section contenant le titre de la page et un formulaire de recherche avec des bouton filtres-->
-            <section>
-                <h1>Trouvez votre hébergements pour des vacances de reve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                        <form method="POST" action="traitement.php">
-                            <input type="text" name="Recherche ville" value="Marseille,France"/>
-                            <input type="submit" value="Rechercher"/>
-                        </form>
-                        <p>Filtres
-                            <i class="fas fa-money-bill-wave-alt">Economique</i>
-                            <i class="fas fa-child">Familial</i>
-                            <i class="fas fa-heart">Romantique</i>
-                            <i class="fas fa-dog">Animaux autorisés</i>
-                        </p>
-            </section>
-            </header>
-            <section>
-                <h2>Hébergements à Marseille</h2>
-                <a href="auberge.html"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></a>
-                <a href="hotelduport.html"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/></a>
-                <a href="hotellesmouettes.html"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"/></a>
-                <a href="hoteldelamer.html"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/></a>
-                <a href="aubergelepanier.html"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"/></a>
-                <a href="hotellesamina"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/></a>
+
+
+           </header>
+                
+                
+                
+          
 
         </body>
