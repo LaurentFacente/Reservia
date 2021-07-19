@@ -9,39 +9,34 @@
 body
 {
     font-family:  'Raleway', sans-serif;
+    margin-left: 20px;
 }
 
 #conteneur
 {
     display: flex; 
-    justify-content: space-between;
+    justify-content:space-between;
     height: 20px;
     width: 300px;
     margin-top: -30px;
     font-size: 12px;
     margin-left: 990px;
     
-    
-    
- 
 }
 
 .element1
-{
-    
-    font-weight: 600;   
-    
+{   
+    font-weight: 600;      
 }
 
 .element2
 {     
-    font-weight: 600; 
+    font-weight: 600;   
 }
 
 .element3
 {  
     font-weight: 800;   
- 
 }
 
 a
@@ -52,6 +47,7 @@ a
 .link_ancre_hebergement, .link_ancre_activités
 {
     color: black;   
+    
 }
 
 .link_inscription
@@ -63,10 +59,100 @@ a
 {
     color: #0065fc;
     font-weight: bold;
+    border-top:#0065fc solid;
+    border-width: 2px;
+    padding-top: 44px;
+     
+    
 }
 
 .element2 :hover
 {
     color: #0065fc;
     font-weight:bold;
+    border-top:#0065fc solid;
+    border-width: 2px;
+    padding-top: 44px;
+      
+}
+
+h1
+{
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.soush1
+{
+    font-size: 12px;
+    margin-top: -5px;
+    font-weight: 500;
+}
+
+.rechercher
+{
+    display: flex;
+    justify-content:flex-start;
+    height: 35px;
+    width: 300px;
+}
+
+.icon
+{
+    background-color: #f2f2f2;
+    font-size: 12px;
+    border-color: #f2f2f2;
+    width: 40px;
+    height: 35px;
+    margin: 0px 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    
+}
+
+.zonetext
+{
+    background-color: white;
+    border-color: #f2f2f2;
+    border-style: solid;
+    width: 235px;
+    border-top-color: #f2f2f2;
+    border-bottom-color: #f2f2f2;
+    
+    
+
+    
+}
+#rechercher::placeholder
+{
+    color: black;
+    font-weight: 750;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+}
+
+.boutonrecherche
+{
+    background-color: #0065fc;
+    color: white;
+    border-color: #0065fc;
+    width: 135px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+      
+
+}
+
+#iconmap
+{
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+::placeholder
+{
+    font-style: bold;
+    color: black;
 }
