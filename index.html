@@ -5,7 +5,7 @@
         <script src="https://kit.fontawesome.com/d2e8ae8546.js" crossorigin="anonymous"></script>
         <title>Trouvez votre hébergements pour des vacances de reve !</title>
         <link rel="stylesheet" href="styles.css"/>
-        <!--Google Fonts-->
+                <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -29,13 +29,14 @@
                         <p class="soush1">En plein centre-ville ou en pleine nature</p>
                 </section>  
                 <section>
-            <!--La partie recherche, 1 conteneur et 3 elements--> 
+                <!--La partie recherche--> 
                     <form class="rechercher" method="POST" action="search">
                             <p class="icon"><label for="rechercher"><i id="iconmap" class="fas fa-map-marker-alt"></i></label></p> 
                             <input class="zonetext" type="search" name="rechercher" id="rechercher" placeholder="Marseille,France"/>
                             <input class="boutonrecherche" type="submit" value="Rechercher"/>          
-                    </form>
+                    </form>        
                 </section>
+                <!--La partie filtres-->
                 <section>
                     <div class="sectionfiltres" class="margefiltre">
                     <div class="filtres"><h3 class="margeh3">Filtres<h3></div>
@@ -43,10 +44,76 @@
                     <div class="filtretexticone" class="familial"><div class="filtreicone"><i class="fas fa-child fa-lg"></i></div><div class="filtretext">Familial</div></div>
                     <div class="filtretexticone" class="romantique"><div class="filtreicone"><i class="fas fa-heart fa-lg"></i></div><div class="filtretext">Romantique</div></div>
                     <div class="filtretexticone" class="animaux"><div class="filtreicone"><i class="fas fa-dog fa-lg"></i></div><div class="filtretext">Animaux autorisés</div></div>
-
-
                     </div>
+                    <div class="zoneinfo"></br><div class="iconeinfo"><i class="fas fa-info"></i></div> Plus de 500 logements disponible dans cette ville</div>
                 </section>
+                <!--La section d'hebergements, separé en deux blocs qui contienne 3 cartes, les cartes separer en 3 <div> image et footer et étoiles le tout dans une seule <div>-->
+                <section class="hebergementetpop">
+                    <div class="hebergements">
+                        <h3>Hébergements à Marseille</h3>
+                        <div class="bloc1">
+                            <div class="cartehebergement">
+                                <div class="imagehebergement1"></div>
+                                <div class="cardfooter">
+                                    <h3>Auberge la cannebiere</h3>
+                                    <p>Nuit à partir de 25€</p>
+                                    <div>Etoiles</div>
+                                </div>                     
+                            </div>
+                            <div class="cartehebergement">
+                                <div class="imagehebergement2"></div>
+                                <div class="cardfooter">
+                                    <h3>Hotel du port</h3>
+                                    <p>Nuit à partir de 52€€</p>
+                                    <div>Etoiles</div>
+                                </div>                     
+                            </div>
+                            <div class="cartehebergement">
+                                <div class="imagehebergement3"></div>
+                                <div class="cardfooter">
+                                    <h3>Hôtel Les mouettes</h3>
+                                    <p>Nuit à partir de 76€€</p>
+                                    <div>Etoiles</div>
+                                </div>                     
+                            </div>
+                        </div>
+                        <!--Début du bloc 2 des cartes d'hebergement-->
+                        <div class="bloc2">
+                            <div class="cartehebergement">
+                                <div class="imagehebergement4"></div>
+                                <div class="cardfooter">
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46€</p>
+                                    <div>Etoiles</div>
+                                </div>                     
+                            </div>
+                            <div class="cartehebergement">
+                                <div class="imagehebergement5"></div>
+                                <div class="cardfooter">
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de 23€</p>
+                                    <div>Etoiles</div>
+                                </div>                     
+                            </div>
+                            <div class="cartehebergement">
+                                <div class="imagehebergement6"></div>
+                                <div class="cardfooter">
+                                    <h3>Hotel chez Amina</h3>
+                                    <p>Nuit à partir de 96€</p>
+                                    <div>Etoiles</div>
+                                </div>                     
+                            </div>
+                        </div>
+                         <p class="afficherplus">Afficher plus</p>
+                    </div>
+
+
+                    
+                    <div class="populaire"></div>
+                
+                </section>
+
+
 
                 
 
