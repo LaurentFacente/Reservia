@@ -6,6 +6,7 @@
 
 }
 
+
 body
 {
     font-family:  'Raleway', sans-serif;
@@ -151,8 +152,70 @@ h1
    padding-left: 10px;
 }
 
-::placeholder
+.sectionfiltres
 {
-    font-style: bold;
-    color: black;
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 750;
+    font-size: 13px;
+    
 }
+.margefiltre
+{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    
+}
+.margeh3
+{
+    margin-right: 20px;
+}
+
+.filtretexticone
+{
+    border: #f2f2f2 solid 2px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filtretexticone>.filtreicone:hover
+{
+    box-shadow: #0065fc 3px 3px 3px;
+    border: #f2f2f2 1px;
+      
+}
+
+
+
+
+
+.filtreicone
+{
+    margin: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+    background-color: #deebff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtretext
+{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
