@@ -559,3 +559,33 @@ h1
     padding-bottom: 1px;
     padding-left: 20px;
 }
+
+.footer
+{
+    background-color: #f2f2f2;
+    width: 100.6%;
+    height: 180px;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    margin-top: 30px;
+    
+    display: flex;
+    justify-content: flex-start;
+    
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 14px;
+    
+
+    
+    
+}
+
+.contenufooter
+{
+   padding-left: 200px;
+   
+   
+   
+}
+
