@@ -43,7 +43,7 @@ body
 
 a
 {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .link_ancre_hebergement, .link_ancre_activités
@@ -95,17 +95,18 @@ h1
 {
     display: flex;
     justify-content:flex-start;
-    height: 35px;
-    width: 300px;
+    height: 40px;
+    width: 300px;  
 }
+
 
 .icon
 {
     background-color: #f2f2f2;
     font-size: 12px;
     border-color: #f2f2f2;
-    width: 40px;
-    height: 35px;
+    width: 55px;
+    height: 40px;
     margin: 0px 0px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -121,17 +122,28 @@ h1
     width: 235px;
     border-top-color: #f2f2f2;
     border-bottom-color: #f2f2f2;
+    color: black;
+    font-weight: 750;
+    
+       
+}
+.zonetext:focus
+{
+    outline: none;
     
     
-
+    
     
 }
+
+
 #rechercher::placeholder
 {
     color: black;
     font-weight: 750;
     font-family: 'Raleway', sans-serif;
     padding-left: 10px;
+    
 }
 
 .boutonrecherche
@@ -149,8 +161,10 @@ h1
 
 #iconmap
 {
-   padding-top: 10px;
-   padding-left: 10px;
+   display: flex;
+   justify-content: center;
+   padding-top: 13px;
+   padding-left: 2px;
 }
 
 .sectionfiltres
@@ -239,13 +253,35 @@ h1
     margin-top: 20px;
 }
 
+.iconebleu
+{
+    color: #0065fc;
+}
+
+.iconegrise
+{
+    color: #f2f2f2;
+}
+
+.displaystar
+{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    
+}
+
+.displaytextcard
+{
+    margin-top: -10px;
+}
 .hebergements
 {
     flex: 2;
     height: 650px;
     background-color: #f2f2f2;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -269,8 +305,14 @@ h1
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 
+}
+
+.h3populaire
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .hebergementetpop
@@ -367,11 +409,21 @@ h1
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
+}
+
+.cartehebergement:hover
+{
+    box-shadow: 5px 5px 5px 1px #deebff;
+    
 }
 
 .cardfooter
 {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .afficherplus
@@ -421,6 +473,12 @@ h1
     flex-direction: row;
     justify-content:center;
     align-items: center;
+    color: black;
+}
+
+.cartepopulaire:hover
+{
+    box-shadow: 5px 5px 5px 1px #deebff;
 }
 .cardfooterpop
 {
@@ -438,25 +496,50 @@ h1
     margin-top: 60px;
 }
 
+h3
+{
+    color: black;
+}
+.blocactivités1et2
+{
+    
+    display: flex;
+    
+}
 .blocactivités1
 {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 530px;
     margin-top: -30px;
-    
-    
-     
+    color: black;
+    flex: 2;
+       
 }
+
+.blocactivités2
+{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 530px;
+    margin-top: -30px;
+    color: black;
+    flex: 2;
+}
+
+
 
 .cartetype1
 {
-    width: 23%;
+    width: 45%;
     height: auto;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border-radius: 20px;
+    color: black;
     
      
 }
@@ -468,6 +551,7 @@ h1
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border-radius: 20px;
     margin-top: 5px;
+    color: black;
          
 }
 
@@ -478,7 +562,23 @@ h1
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border-radius: 20px;
     margin-top: 35px;
+    color: black;
      
+}
+
+.cartetype1:hover
+{
+    box-shadow: 5px 5px 5px 1px #deebff;
+}
+
+.cartetype2:hover
+{
+    box-shadow: 5px 5px 5px 1px #deebff;
+}
+
+.cartetype3:hover
+{
+    box-shadow: 5px 5px 5px 1px #deebff;
 }
 
 
