@@ -2,29 +2,33 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <script src="https://kit.fontawesome.com/d2e8ae8546.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" /> <!--Encodage-->
+    <script src="https://kit.fontawesome.com/d2e8ae8546.js" crossorigin="anonymous"></script><!--Icones-->
     <title>Trouvez votre hébergement pour des vacances de reve !</title>
     <link rel="stylesheet" href="styles.css" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Le header du site contenant le logo et les liens de navigaton(ancres)-->
+    <!--Le header de la page, contenant le logo et les liens de navigaton(ancres)-->
     <header>
         <nav>
             <a href="html_reservia.html">
                 <img src="images/logo/Reservia@3x.png" id="logo" alt="Logo" />
             </a>
-            <div id="conteneur">
-                <div class="element1"><a class="link_ancre_hebergement" href="#Hébergements">Hébergements</a></div>
-                <div class="element2"><a class="link_ancre_activités" href="#Activités">Activités</a></div>
-                <div class="element3"><a class="link_inscription" href="page_inscription.html">S'inscrire</a></div>
+            <div class="liensnavigation">
+                <div class="liennavhebergement">
+                    <a class="link_ancre_hebergement" href="#Hébergements">Hébergements</a>
+                </div>
+                <div class="liennavactivités">
+                    <a class="link_ancre_activités" href="#Activités">Activités</a>
+                </div>
+                <div class="lienincription">
+                    <a class="link_inscription" href="page_inscription.html">S'inscrire</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -33,32 +37,32 @@
         <p class="soush1">En plein centre-ville ou en pleine nature</p>
     </section>
     <section>
-        <!--La partie recherche-->
+    <!--Section "Recherche"-->
         <form class="rechercher" method="POST" action="search">
             <p class="icon"><label for="rechercher"><i id="iconmap" class="fas fa-map-marker-alt"></i></label></p>
             <input class="zonetext" type="search" name="rechercher" id="rechercher" placeholder="Marseille, France" />
             <input class="boutonrecherche" type="submit" value="Rechercher" />
         </form>
     </section>
-    <!--La partie filtres-->
+    <!--Section "filtres"-->
     <section>
         <div class="sectionfiltres" class="margefiltre">
             <div class="filtres">
                 <h3 class="margeh3">Filtres<h3>
             </div>
-            <div class="filtretexticone" class="eco">
+            <div class="filtretexticone">
                 <div class="filtreicone"><i class="fas fa-money-bill-wave-alt fa-lg"></i></div>
                 <div class="filtretext">Economique</div>
             </div>
-            <div class="filtretexticone" class="familial">
+            <div class="filtretexticone">
                 <div class="filtreicone"><i class="fas fa-child fa-lg"></i></div>
                 <div class="filtretext">Familial</div>
             </div>
-            <div class="filtretexticone" class="romantique">
+            <div class="filtretexticone">
                 <div class="filtreicone"><i class="fas fa-heart fa-lg"></i></div>
                 <div class="filtretext">Romantique</div>
             </div>
-            <div class="filtretexticone" class="animaux">
+            <div class="filtretexticone">
                 <div class="filtreicone"><i class="fas fa-dog fa-lg"></i></div>
                 <div class="filtretext">Animaux autorisés</div>
             </div>
@@ -67,8 +71,7 @@
             <div class="iconeinfo"><i class="fas fa-info"></i></div> Plus de 500 logements disponible dans cette ville
         </div>
     </section>
-    <!--La section d'hebergements, separé en deux blocs qui contienne 3 cartes, les cartes separer en 3 <div> image et footer et étoiles le tout dans une seule <div>-->
-    <section id="Hébergements" class="hebergementetpop">
+    <!--Section "Hébergements" -->
         <div class="hebergements">
             <h3>Hébergements à Marseille</h3>
             <div class="bloc1">
@@ -77,7 +80,17 @@
                     <div class="cardfooter">
                         <h3>Auberge la cannebiere</h3>
                         <p class="displaytextcard">Nuit à partir de 25€</p>
-                        <div class="displaystar"><div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="iconegrise"><i class="fas fa-star"></i></div></div>
+                        <div class="displaystar">
+                            <div class="iconebleu">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="iconegrise">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="lien404.html" class="cartehebergement">
@@ -85,7 +98,15 @@
                     <div class="cardfooter">
                         <h3>Hotel du port</h3>
                         <p class="displaytextcard">Nuit à partir de 52€</p>
-                        <div class="displaystar"><div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+                        <div class="displaystar">
+                            <div class="iconebleu">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="lien404.html" class="cartehebergement">
@@ -93,7 +114,17 @@
                     <div class="cardfooter">
                         <h3>Hôtel Les mouettes</h3>
                         <p class="displaytextcard">Nuit à partir de 76€</p>
-                        <div class="displaystar"><div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="iconegrise"><i class="fas fa-star"></i></div></div>
+                        <div class="displaystar">
+                            <div class="iconebleu">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="iconegrise">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -122,7 +153,17 @@
                     <div class="cardfooter">
                         <h3>Auberge Le Panier</h3>
                         <p class="displaytextcard">Nuit à partir de 23€</p>
-                        <div class="displaystar"><div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="iconegrise"><i class="fas fa-star"></i></div></div>
+                        <div class="displaystar">
+                            <div class="iconebleu">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="iconegrise">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="lien404.html" class="cartehebergement">
@@ -130,13 +171,21 @@
                     <div class="cardfooter">
                         <h3>Hotel chez Amina</h3>
                         <p class="displaytextcard">Nuit à partir de 96€</p>
-                        <div class="displaystar"><div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
+                        <div class="displaystar">
+                            <div class="iconebleu">
+                                <i class="fas fa-sta" ></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
             </div>
             <p class="afficherplus">Afficher plus</p>
         </div>
-
+        <!--Section "Populaire"-->
         <div class="populaire">
             <h3 class="h3populaire">Les plus poluplaires <i class="fas fa-chart-line"></i></h3>
 
@@ -145,7 +194,13 @@
                 <div class="cardfooterpop">
                     <h3>Hôtel Le soleil du matin</h3>
                     <p class="displaytextcard">Nuit à partir de 128€</p>
-                    <div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="iconebleu">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </div>
             </a>
             <a href="lien404.html" class="cartepopulaire">
@@ -153,7 +208,17 @@
                 <div class="cardfooterpop">
                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                     <p class="displaytextcard">Nuit à partir de 71€</p>
-                    <div class="displaystar"><div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="iconegrise"><i class="fas fa-star"></i></div></div>
+                    <div class="displaystar">
+                        <div class="iconebleu">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="iconegrise">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="lien404" class="cartepopulaire">
@@ -161,21 +226,29 @@
                 <div class="cardfooterpop">
                     <h3>Hôtel Tout bleu et blanc</h3>
                     <p class="displaytextcard">Nuit à partir de 68€</p>
-                    <div class="displaystar"><div class="iconebleu"><i class="fas fa-star fa-" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><div class="iconegrise"><i class="fas fa-star"></i></div></div>
+                    <div class="displaystar">
+                        <div class="iconebleu">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="iconegrise">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
                 </div>
             </a>
         </div>
     </section>
-    <!--Section activités-->
-    <section id="Activités">
-
-
+    <!--Section "Activités"-->
+    <section>
         <div>
             <div class="titreactivités">
                 <h3>Activités à Marseille</h3>
             </div>
-        <div class="blocactivités1et2">
-                <div class="blocactivités1">
+            <div class="blocactivités1et2">
+                <div class="blocactivités1"><!--Bloc Activités 1-->
                     <div class="cartetype1">
                         <a href="lien404.html">
                             <div class="photoactivités1"></div>
@@ -204,7 +277,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="blocactivités2">
+                <div class="blocactivités2"> <!--Bloc Activités 2-->
                     <div class="cartetype1">
                         <a href="lien404.html">
                             <div class="photoactivités4"></div>
@@ -233,13 +306,10 @@
                     </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        </div>
-
     </section>
-
+    <!--Footer de la page-->
     <footer class="footer">
         <div>
             <h3>A propos</h3>
@@ -260,16 +330,5 @@
 
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
