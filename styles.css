@@ -1,12 +1,12 @@
+/* PARTIE HEADER */
+/* Taille et placement du logo */
 #logo
 {
     width: 97px;
     height: 45px;
     padding-top: 20px;
-
 }
-
-
+/* Police et marge du body */
 body
 {
     font-family:  'Raleway', sans-serif;
@@ -14,7 +14,8 @@ body
     margin-right: 20px;
 }
 
-#conteneur
+/* PARTIE NAVIGATION */
+.liensnavigation
 {
     display: flex; 
     justify-content:space-between;
@@ -22,34 +23,38 @@ body
     width: 300px;
     margin-top: -30px;
     font-size: 12px;
-    margin-left: 990px;
-    
+    margin-left: 990px;   
 }
 
-.element1
+/* Reglage de l'épaisseur de la police des liens NAV */
+.liennavhebergement
 {   
     font-weight: 600;      
 }
 
-.element2
-{     
-    font-weight: 600;   
+.liennavactivités
+{
+    font-weight: 600;
 }
 
-.element3
+.lienincription
 {  
     font-weight: 800;   
 }
-
+/* Supression de l'effet souligné des liens de toute la page */
 a
 {
     text-decoration: none;
 }
-
-.link_ancre_hebergement, .link_ancre_activités
+/* Couleur des liens de la partie NAV */
+.link_ancre_hebergement
 {
-    color: black;   
-    
+    color: black;     
+}
+
+.link_ancre_activités
+{
+    color: black;
 }
 
 .link_inscription
@@ -57,27 +62,26 @@ a
     color: #0065fc;
 }
 
-.element1 :hover
+/* Effet au survol des liens de la partie NAV */
+.liennavhebergement :hover
 {
     color: #0065fc;
     font-weight: bold;
     border-top:#0065fc solid;
     border-width: 2px;
-    padding-top: 44px;
-     
-    
+    padding-top: 44px;     
 }
 
-.element2 :hover
+.liennavactivités :hover
 {
     color: #0065fc;
     font-weight:bold;
     border-top:#0065fc solid;
     border-width: 2px;
-    padding-top: 44px;
-      
+    padding-top: 44px;    
 }
 
+/* Taille et placement du h1 et du <p> en dessous */
 h1
 {
     font-size: 16px;
@@ -91,6 +95,7 @@ h1
     font-weight: 500;
 }
 
+/* PARTIE BARRE DE RECHERCHE */
 .rechercher
 {
     display: flex;
@@ -98,7 +103,6 @@ h1
     height: 40px;
     width: 300px;  
 }
-
 
 .icon
 {
@@ -109,9 +113,7 @@ h1
     height: 40px;
     margin: 0px 0px;
     border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    
-    
+    border-top-left-radius: 10px;   
 }
 
 .zonetext
@@ -123,27 +125,7 @@ h1
     border-top-color: #f2f2f2;
     border-bottom-color: #f2f2f2;
     color: black;
-    font-weight: 750;
-    
-       
-}
-.zonetext:focus
-{
-    outline: none;
-    
-    
-    
-    
-}
-
-
-#rechercher::placeholder
-{
-    color: black;
-    font-weight: 750;
-    font-family: 'Raleway', sans-serif;
-    padding-left: 10px;
-    
+    font-weight: 750;       
 }
 
 .boutonrecherche
@@ -154,11 +136,25 @@ h1
     width: 135px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-style: none;
-      
-
+    border-style: none;    
 }
 
+/* Supression de la bordure noire a la selection du champ de recherche */
+.zonetext:focus
+{
+    outline: none;    
+}
+
+/* Reglage du placeholder dans le champs de recherche */
+#rechercher::placeholder
+{
+    color: black;
+    font-weight: 750;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;   
+}
+
+/* Placement de l'icone de la barre de recherche */
 #iconmap
 {
    display: flex;
@@ -167,6 +163,8 @@ h1
    padding-left: 2px;
 }
 
+/* PARTIE FILTRES */
+/* Placement et taille de police */
 .sectionfiltres
 {
     display: flex;
@@ -174,20 +172,21 @@ h1
     align-items: center;
     margin-top: 20px;
     font-weight: 750;
-    font-size: 13px;
-    
+    font-size: 13px;   
 }
 .margefiltre
 {
     margin-top: 50px;
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px;  
 }
-.margeh3
+
+/* Marge du texte "Filtres" */
+.margeh3 
 {
     margin-right: 20px;
 }
 
+/* Reglages de la <div> qui contien le texte et l'icone des filtre */
 .filtretexticone
 {
     border: #f2f2f2 solid 2px;
@@ -198,13 +197,15 @@ h1
     justify-content: space-between;
     align-items: center;
 }
+
+/* Effets d'ombres sur la bordure des icones */
 .filtretexticone>.filtreicone:hover
 {
     box-shadow: #0065fc 3px 3px 3px;
-    border: #f2f2f2 1px;
-      
+    border: #f2f2f2 1px;     
 }
 
+/* Reglage de la <div> contenant l'icone du filtre */
 .filtreicone
 {
     margin: -2px;
@@ -218,6 +219,7 @@ h1
     justify-content: center;
 }
 
+/* Reglage de la <div> contenant l'icone du filtre */
 .filtretext
 {
     height: 40px;
@@ -230,6 +232,7 @@ h1
     justify-content: center;
 }
 
+/* Zone icone info + texte */
 .iconeinfo
 {
     margin-right: 10px;
@@ -241,10 +244,9 @@ h1
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9px;
-
-    
+    font-size: 9px;  
 }
+
 .zoneinfo 
 {
     display: flex;
@@ -253,28 +255,8 @@ h1
     margin-top: 20px;
 }
 
-.iconebleu
-{
-    color: #0065fc;
-}
-
-.iconegrise
-{
-    color: #f2f2f2;
-}
-
-.displaystar
-{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 5px;
-    
-}
-
-.displaytextcard
-{
-    margin-top: -10px;
-}
+/* PARTIE HEBERGEMENT */
+/* Reglages des bloc "hebergement" et "populaire" fractionné en 3 avec un atribut "flex" */
 .hebergements
 {
     flex: 2;
@@ -287,10 +269,8 @@ h1
     padding-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    justify-content: space-around;  
 }
-
 
 .populaire
 {
@@ -299,15 +279,15 @@ h1
     margin-left: 20px;
     border-radius: 10px;
     background-color: #f2f2f2;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
+/* Placement de du <h3> "populaire" avec son icone */
 .h3populaire
 {
     display: flex;
@@ -321,6 +301,7 @@ h1
     align-content: space-around;
 }
 
+/* Incertion des images avec un "background-image" */
 .imagehebergement1
 {
     background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -381,6 +362,7 @@ h1
     border-radius: 15px 15px 0px 0px;
 }
 
+/* Reglage du placement des cartes hébergement */
 .bloc1
 {
     display: flex;
@@ -397,6 +379,7 @@ h1
     margin-top: 10px;
 }
 
+/* Reglages des cartes hebergement */
 .cartehebergement
 {
     width: 30%;
@@ -412,10 +395,10 @@ h1
     color: black;
 }
 
+/*Effect d'ombres au survol des cartes */
 .cartehebergement:hover
 {
-    box-shadow: 5px 5px 5px 1px #deebff;
-    
+    box-shadow: 5px 5px 5px 1px #5c7aa7;    
 }
 
 .cardfooter
@@ -431,6 +414,32 @@ h1
     font-weight: bold;
 }
 
+/* Reglages des icones étoiles dans le footer des cartes */
+.iconebleu
+{
+    color: #0065fc;
+}
+
+.iconegrise
+{
+    color: #f2f2f2;
+}
+
+.displaystar
+{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;   
+}
+
+/* Position du <p> dans les cardfooter */
+.displaytextcard
+{
+    margin-top: -10px;
+}
+
+/* PARTIE POPULAIRE */
+/* Incertion des images avec un "background-image" */
 .imagepopulaire1
 {
     background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
@@ -461,6 +470,7 @@ h1
     border-radius: 15px 0px 0px 15px;
 }
 
+/* Reglages cartes populaire */
 .cartepopulaire
 {
     width: auto;
@@ -476,9 +486,11 @@ h1
     color: black;
 }
 
+/* Effect d'ombres au survol*/
 .cartepopulaire:hover
 {
-    box-shadow: 5px 5px 5px 1px #deebff;
+    box-shadow: 5px 5px 5px 1px #5c7aa7;
+    
 }
 .cardfooterpop
 {
@@ -490,7 +502,7 @@ h1
 }
 
 /* SECTION "ACTIVITES A MARSEILLE" */
-
+/* Reglages des <h3> */
 .titreactivités
 {
     margin-top: 60px;
@@ -500,28 +512,27 @@ h3
 {
     color: black;
 }
+
+/* Reglage des blocs contenant les cartes */
 .blocactivités1et2
-{
-    
-    display: flex;
-    
+{ 
+    display: flex;  
 }
+
+
 .blocactivités1
-{
-    
+{   
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 530px;
     margin-top: -30px;
     color: black;
-    flex: 2;
-       
+    flex: 2;      
 }
 
 .blocactivités2
 {
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -531,17 +542,14 @@ h3
     flex: 2;
 }
 
-
-
+/* Reglage des cartes "Activités" */
 .cartetype1
 {
     width: 45%;
     height: auto;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border-radius: 20px;
-    color: black;
-    
-     
+    color: black;  
 }
 
 .cartetype2
@@ -551,8 +559,7 @@ h3
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border-radius: 20px;
     margin-top: 5px;
-    color: black;
-         
+    color: black;       
 }
 
 .cartetype3
@@ -562,27 +569,26 @@ h3
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border-radius: 20px;
     margin-top: 35px;
-    color: black;
-     
+    color: black;   
 }
 
+/* Effets d'ombres au survol des cartes */
 .cartetype1:hover
 {
-    box-shadow: 5px 5px 5px 1px #deebff;
+    box-shadow: 5px 5px 5px 1px #5c7aa7;
 }
 
 .cartetype2:hover
 {
-    box-shadow: 5px 5px 5px 1px #deebff;
+    box-shadow: 5px 5px 5px 1px #5c7aa7;
 }
 
 .cartetype3:hover
 {
-    box-shadow: 5px 5px 5px 1px #deebff;
+    box-shadow: 5px 5px 5px 1px #5c7aa7;
 }
 
-
-
+/* Incertion des images avec "background-image" */
 .photoactivités1
 {
     background-image: url("./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
@@ -590,9 +596,7 @@ h3
     background-position:center;
     width: 100%;
     height: 400px;
-    border-radius: 15px 15px 0px 0px;
-    
-   
+    border-radius: 15px 15px 0px 0px; 
 }
 
 .photoactivités2
@@ -602,8 +606,7 @@ h3
     background-position:center;
     width: 100%;
     height: 200px;
-    border-radius: 15px 15px 0px 0px;
-    
+    border-radius: 15px 15px 0px 0px;   
 }
 
 .photoactivités3
@@ -614,7 +617,6 @@ h3
     width: 100%;
     height: 100px;
     border-radius: 15px 15px 0px 0px;
-  
 }
 
 .photoactivités4
@@ -624,8 +626,7 @@ h3
     background-position:center;
     width: 100%;
     height: 400px;
-    border-radius: 15px 15px 0px 0px;
-  
+    border-radius: 15px 15px 0px 0px;  
 }
 
 .photoactivités5
@@ -636,7 +637,6 @@ h3
     width: 100%;
     height: 150px;
     border-radius: 15px 15px 0px 0px;
-  
 }
 
 .photoactivités6
@@ -649,6 +649,7 @@ h3
     border-radius: 15px 15px 0px 0px;   
 }
 
+/* Placement du texte dans les footer des cartes */
 .footeractivités1
 {
     padding-left: 20px;
@@ -660,6 +661,7 @@ h3
     padding-left: 20px;
 }
 
+/* SECTION FOOTER */
 .footer
 {
     background-color: #f2f2f2;
@@ -668,24 +670,16 @@ h3
     margin-left: -20px;
     margin-bottom: -20px;
     margin-top: 30px;
-    
     display: flex;
     justify-content: flex-start;
-    
     padding-top: 20px;
     padding-left: 30px;
-    font-size: 14px;
-    
-
-    
-    
+    font-size: 14px;  
 }
 
 .contenufooter
 {
    padding-left: 200px;
-   
-   
-   
+    
 }
 
