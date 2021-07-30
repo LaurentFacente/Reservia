@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/d2e8ae8546.js" crossorigin="anonymous"></script><!--Icones-->
     <title>Trouvez votre hébergement pour des vacances de reve !</title>
     <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +16,26 @@
 <body>
     <!--Le header de la page, contenant le logo et les liens de navigaton(ancres)-->
     <header>
-        <nav>
-            <a href="html_reservia.html">
+            <div class="logo"><a href="html_reservia.html">
                 <img src="images/logo/Reservia@3x.png" id="logo" alt="Logo" />
-            </a>
+                </a>
+            </div>
+        <nav> 
             <div class="liensnavigation">
+            <div class="liensnav12">
                 <div class="liennavhebergement">
                     <a class="link_ancre_hebergement" href="#Hébergements">Hébergements</a>
                 </div>
                 <div class="liennavactivités">
                     <a class="link_ancre_activités" href="#Activités">Activités</a>
                 </div>
+            </div>
                 <div class="lienincription">
                     <a class="link_inscription" href="page_inscription.html">S'inscrire</a>
                 </div>
             </div>
         </nav>
+    
     </header>
     <section>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -46,10 +51,9 @@
     </section>
     <!--Section "filtres"-->
     <section>
-        <div class="sectionfiltres" class="margefiltre">
-            <div class="filtres">
+        <div class="margefiltre">
                 <h3 class="margeh3">Filtres<h3>
-            </div>
+         <div class="sectionfiltres">
             <div class="filtretexticone">
                 <div class="filtreicone"><i class="fas fa-money-bill-wave-alt fa-lg"></i></div>
                 <div class="filtretext">Economique</div>
@@ -66,6 +70,7 @@
                 <div class="filtreicone"><i class="fas fa-dog fa-lg"></i></div>
                 <div class="filtretext">Animaux autorisés</div>
             </div>
+         </div>
         </div>
         <div class="zoneinfo"></br>
             <div class="iconeinfo"><i class="fas fa-info"></i></div> Plus de 500 logements disponible dans cette ville
@@ -73,7 +78,7 @@
     </section>
     <!--Section "Hébergements" -->
     <section class="hebergementetpop"> 
-        <div class="hebergements">
+        <div id="Hébergements" class="hebergements">
             <h3>Hébergements à Marseille</h3>
             <div class="bloc1">
                 <a href="lien404.html" class="cartehebergement">
@@ -244,7 +249,7 @@
     </section>
     <!--Section "Activités"-->
     <section>
-        <div>
+        <div id="Activités">
             <div class="titreactivités">
                 <h3>Activités à Marseille</h3>
             </div>
