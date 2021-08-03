@@ -781,30 +781,80 @@ h3
 
         .liensnavigation
         {
-            margin: 0px;  
+            margin: 0px; 
+            width: 375px;
+            margin-top: -30px
         }
 
         .link_inscription
         {
-            font-size: 16px;
-               
+            font-size: 16px;  
+            margin-left: -90px;     
+        }
+
+        .link_ancre_hebergement
+        {
+            padding-left: 40px;
+        }
+
+        .link_ancre_activités
+        {
+            padding-left: 50px;
+        }
+
+        .liennavactivités
+        {
+            width: 50%;
+            margin: 0px 0px 0px 0px;
+            border-bottom: #f2f2f2 solid 3px;
+            padding-bottom: 30px;
+        }
+
+        .liennavhebergement
+        {
+            
+            width: 50%;
+            border-bottom: solid #0065fc 3px;
+            padding-bottom: 30px;
+              
         }
 
         .liensnav12
         {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            padding-left: 80px;
-            font-size: 14px;
-            padding-top: 30px;
             
+            width: 375px;
+            font-size: 16px;
+            padding-top: 30px;
+            margin-top: 20px;
+            border-bottom: solid #f2f2f2 3px;
+            padding-bottom: 30px;
+        
+            
+               
         }
+
+        
+
+        .liennavactivités :hover
+        {
+            color: #0065fc;
+            font-weight: bold; 
+            border: none;
+        }
+
+        .liennavhebergement :hover
+        {
+            color: #0065fc;
+            font-weight: bold;
+            border: none;
+        }
+        
         
         h1 
         {
             font-size: 23px;
             padding-left: 20px;
+            margin-top: 90px;
         }
 
         .soush1
@@ -817,20 +867,22 @@ h3
         {
             width: 90%;
             height: 50px;
-            margin-top: 30px;
-            margin-bottom: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
             padding-left: 20px;
         }
 
         .icon
         {
             height: 50px;
+            
         }
 
         .boutonrecherche
         {
             border-radius: 10px 10px 10px 10px;
             display: none; 
+            
         }
 
         .boutonrecherchemobile
@@ -842,6 +894,7 @@ h3
             height: 50px;
             width: 50px;
             border-style: none;
+            
         }
 
         .sectionfiltres
