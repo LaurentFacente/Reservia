@@ -19,11 +19,12 @@ body
 {
     display: flex; 
     justify-content:space-between;
+    float: right;
     height: 20px;
     width: 300px;
     margin-top: -30px;
     font-size: 12px;
-    margin-left: 990px;   
+       
 }
 
 .liensnav12
@@ -47,7 +48,8 @@ body
 
 .lienincription
 {  
-    font-weight: 800;   
+    font-weight: 800;  
+    padding-right: 25px; 
 }
 /* Supression de l'effet souligné des liens de toute la page */
 a
@@ -77,7 +79,8 @@ a
     font-weight: bold;
     border-top:#0065fc solid;
     border-width: 2px;
-    padding-top: 44px;     
+    padding-top: 44px;  
+      
 }
 
 .liennavactivités :hover
@@ -182,10 +185,11 @@ h1
 .sectionfiltres
 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    
     font-weight: 750;
-    font-size: 13px;   
+    font-size: 13px;  
+    
 }
 .margefiltre
 {
@@ -559,6 +563,8 @@ h3
     flex: 2;
 }
 
+
+
 /* Reglage des cartes "Activités" */
 .cartetype1
 {
@@ -689,6 +695,7 @@ h3
     margin-top: 30px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding-top: 20px;
     padding-left: 30px;
     font-size: 14px;  
@@ -696,7 +703,9 @@ h3
 
 .contenufooter
 {
-   padding-left: 200px;
+   display: flex;
+   flex-direction: column;
+   padding-left: 100px;
     
 }
 
@@ -704,11 +713,16 @@ h3
 {
     .liensnavigation
     {
-        margin-left: 600px;
+        margin-left: 700px;
+    }
+
+    .cartehebergement
+    {
+        font-size: 14px;
     }
 }
 
-@media  screen and (max-width:1135px)
+@media  screen and (max-width:1150px)
 {
     .hebergementetpop
     {
@@ -721,11 +735,16 @@ h3
         margin-right: 0px;
     }
 
+    .cartehebergement
+    {
+        font-size: 13px;
+    }
     .populaire
     {
         margin-left: 0px;
         margin-right: 0px;  
         padding-bottom: 30px;
+        order: 1;
     }
 
 
@@ -765,8 +784,99 @@ h3
             margin-right: -20px;
         }
 }
-/* PARTIE MOBILE */
- @media  screen and (max-width:375px)
+
+@media  screen and (max-width:830px)
+{
+        .cartetype2
+        {
+            width: 350px;
+        }
+        .cartetype3
+        {
+            width: 350px;
+        }
+}
+
+@media  screen and (max-width:730px)
+{
+        .cartetype2
+        {
+            width: 330px;
+        }
+        .cartetype3
+        {
+            width: 330px;
+        }
+}
+
+@media  screen and (max-width:680px)
+{       .cartetype1
+        {
+            width: 45%;
+        }
+        .cartetype2
+        {
+            width: 320px;
+        }
+        .cartetype3
+        {
+            width: 320px;
+        }
+        .cartehebergement
+        {
+            font-size: 12px;
+        }
+        .footer
+        {
+            font-size: 11px;
+        }
+        .contenufooter
+        {
+            padding-left: 40px;
+        }
+        body
+        {
+            margin-right: 0px;
+        }
+}
+@media  screen and (max-width:630px)
+{       .cartetype1
+        {
+            width: 40%;
+        }
+        .cartetype2
+        {
+            width: 300px;
+        }
+        .cartetype3
+        {
+            width: 300px;
+        }
+        .cartehebergement
+        {
+            font-size: 11px;
+        }
+}
+@media  screen and (max-width:530px)
+{       .cartetype1
+        {
+            width: 40%;
+        }
+        .cartetype2
+        {
+            width: 270px;
+        }
+        .cartetype3
+        {
+            width: 270px;
+        }
+        .contenufooter
+        {
+            padding-left: 20px;
+        }
+}
+/* PARTIE MOBILE S/M */
+ @media  screen and (max-width:375px) and (min-width:320px)
 {
         #logo
         {
@@ -789,7 +899,13 @@ h3
         .link_inscription
         {
             font-size: 16px;  
-            margin-left: -90px;     
+            margin-left: -90px; 
+             
+        }
+
+        .lienincription
+        {
+            padding-right: 0px;
         }
 
         .link_ancre_hebergement
@@ -806,40 +922,36 @@ h3
         {
             width: 50%;
             margin: 0px 0px 0px 0px;
-            border-bottom: #f2f2f2 solid 3px;
-            padding-bottom: 30px;
+            border-bottom: #f2f2f2 solid 4px;
+            padding-bottom: 30px; 
+            margin-right: -10px;
         }
 
         .liennavhebergement
-        {
-            
+        {  
             width: 50%;
             border-bottom: solid #0065fc 3px;
-            padding-bottom: 30px;
-              
+            padding-bottom: 30px;   
+            margin-left: 10px 
         }
 
         .liensnav12
         {
-            
-            width: 375px;
+            width: 100%;
             font-size: 16px;
             padding-top: 30px;
             margin-top: 20px;
-            border-bottom: solid #f2f2f2 3px;
-            padding-bottom: 30px;
-        
-            
-               
+            padding-bottom: 30px;       
         }
-
-        
 
         .liennavactivités :hover
         {
             color: #0065fc;
             font-weight: bold; 
-            border: none;
+            border-top: none;
+            border-bottom: #0065fc solid 3px;
+            padding-bottom: 11px;
+            padding-right: 72px 
         }
 
         .liennavhebergement :hover
@@ -848,7 +960,6 @@ h3
             font-weight: bold;
             border: none;
         }
-        
         
         h1 
         {
@@ -874,15 +985,13 @@ h3
 
         .icon
         {
-            height: 50px;
-            
+            height: 50px;   
         }
 
         .boutonrecherche
         {
             border-radius: 10px 10px 10px 10px;
-            display: none; 
-            
+            display: none;  
         }
 
         .boutonrecherchemobile
@@ -893,8 +1002,8 @@ h3
             border-radius: 10px;
             height: 50px;
             width: 50px;
-            border-style: none;
-            
+            border-style: none; 
+            border-right: none;
         }
 
         .sectionfiltres
@@ -929,16 +1038,18 @@ h3
 
         .footer
         {
-            width: 100%;
-            display: flex;
+            width: 365px;
+            display: block;
             flex-direction: column;
-            height: 400px;  
+            height: 400px; 
         }
-
         .contenufooter
         {
-            padding-left: 0px;  
+            padding-left: 0px;
+            padding-top: 10px;
         }
+
+
 
         .titreactivités
         {
@@ -1163,7 +1274,9 @@ h3
         .afficherplus
         {
             font-size: 18px;
-            padding-top: -40px
+            padding-top: -40px;
+            
+            
         }
         .populaire
         {
@@ -1207,3 +1320,7 @@ h3
         }
 
 }
+
+
+
+
