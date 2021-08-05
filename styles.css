@@ -1,5 +1,7 @@
 /* PARTIE HEADER */
+
 /* Taille et placement du logo */
+
 #logo
 {
     width: 97px;
@@ -775,6 +777,11 @@ h3
         width: 400px;
     }
 
+    .contenufooter
+    {
+        padding-left: 150px;
+    }
+
  }    
 
 @media  screen and (max-width:1015px)
@@ -794,6 +801,10 @@ h3
         .cartetype3
         {
             width: 350px;
+        }
+        .contenufooter
+        {
+            padding-left: 100px ;
         }
 }
 
@@ -1311,6 +1322,36 @@ h3
             align-items: center;
             color: black;
             margin-bottom: 5px;
+        }
+
+        .imagepopulaire1
+        {
+            background-image: url("./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 60%;
+            height: 100%;
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        .imagepopulaire2
+        {
+            background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 60%;
+            height: 100%;
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        .imagepopulaire3
+        {
+            background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 60%;
+            height: 100%;
+            border-radius: 15px 0px 0px 15px;
         }
         
         body
