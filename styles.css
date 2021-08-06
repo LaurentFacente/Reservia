@@ -886,8 +886,489 @@ h3
             padding-left: 20px;
         }
 }
+
+/* PARTIE MOBILE L */
+@media  screen and (max-width:490px) and (min-width:375px)
+{
+        #logo
+        {
+            width: 50%;
+        }
+
+        .logo
+        {
+            width: 50%;
+            padding-left: 20px;   
+        }
+
+        .liensnavigation
+        {
+            margin: 0px; 
+            width: 100%;
+            margin-top: -30px;
+        }
+
+        .link_inscription
+        {
+            font-size: 16px;  
+            margin-left: -90px; 
+             
+        }
+
+        .lienincription
+        {
+            padding-right: 0px;
+        }
+
+        .link_ancre_hebergement
+        {
+            padding-left: 40px;
+        }
+
+        .link_ancre_activités
+        {
+            padding-left: 50px;
+        }
+
+        .liennavactivités
+        {
+            width: 50%;
+            margin: 0px 0px 0px 0px;
+            border-bottom: #f2f2f2 solid 4px;
+            padding-bottom: 30px; 
+            margin-right: -10px;
+        }
+
+        .liennavhebergement
+        {  
+            width: 50%;
+            border-bottom: solid #0065fc 3px;
+            padding-bottom: 30px;   
+            margin-left: 0px;
+        }
+
+        .liensnav12
+        {
+            width: 100%;
+            font-size: 16px;
+            padding-top: 30px;
+            margin-top: 20px;
+            padding-bottom: 30px;       
+        }
+
+        .liennavactivités :hover
+        {
+            color: #0065fc;
+            font-weight: bold; 
+            border-top: none;
+            border-bottom: #0065fc solid 3px;
+            padding-bottom: 11px;
+            padding-right: 85px;
+        }
+
+        .liennavhebergement :hover
+        {
+            color: #0065fc;
+            font-weight: bold;
+            border: none;
+        }
+        
+        h1 
+        {
+            font-size: 23px;
+            padding-left: 20px;
+            margin-top: 90px;
+        }
+
+        .soush1
+        {
+            font-size: 16px;
+            padding-left: 20px;
+        }
+
+        .rechercher
+        {
+            width: 90%;
+            height: 50px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .icon
+        {
+            height: 50px;   
+        }
+
+        .boutonrecherche
+        {
+            border-radius: 10px 10px 10px 10px;
+            display: none;  
+        }
+
+        .boutonrecherchemobile
+        {
+            display: inline-block;
+            color: white;
+            background-color: #0065fc;
+            border-radius: 10px;
+            height: 50px;
+            width: 50px;
+            border-style: none; 
+            border-right: none;
+        }
+
+        .sectionfiltres
+        {
+            flex-wrap: wrap; 
+            display: flex; 
+            padding-left: 20px; 
+            padding-top: 5px;  
+        }
+
+        .margefiltre
+        {
+          display: inline;
+        }
+
+        .margeh3
+        {
+            padding-left: 20px;
+        }
+
+        .filtretexticone
+        {
+            margin-bottom: 10px;
+        }
+
+        .zoneinfo
+        {
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding-left: 20px;
+        }
+
+        .footer
+        {
+            width: 97%;
+            display: block;
+            flex-direction: column;
+            height: 400px; 
+        }
+        .contenufooter
+        {
+            padding-left: 0px;
+            padding-top: 10px;
+        }
+
+
+
+        .titreactivités
+        {
+            padding-left: 20px;
+        }
+
+        .blocactivités1et2
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .blocactivités1
+        {   
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 530px;
+            color: black;
+            flex: 2;      
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .blocactivités2
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 530px;
+            color: black;
+            flex: 2;
+            padding-right: 5px;
+            padding-left: 5px;   
+        }
+
+        .cartetype1
+        {
+            width: 340px;
+            height: auto;
+            box-shadow: 5px 5px 5px 1px #f2f2f2;
+            border-radius: 20px;
+            color: black;  
+            margin-top: 10px;  
+        }
+
+        .cartetype2
+        {
+            width: 340px;
+            height: auto;
+            box-shadow: 5px 5px 5px 1px #f2f2f2;
+            border-radius: 20px;
+            margin-top: 35px;
+            color: black;        
+        }
+
+        .cartetype3
+        {
+            width: 340px;
+            height: auto;
+            box-shadow: 5px 5px 5px 1px #f2f2f2;
+            border-radius: 20px;
+            margin-top: 35px;
+            color: black;      
+        }
+
+        .photoactivités1
+        {
+            background-image: url("./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+            background-size: cover;
+            background-position:center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px; 
+        }
+
+        .photoactivités2
+        {
+            background-image: url("./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+            background-size: cover;
+            background-position:center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;   
+        }
+
+        .photoactivités3
+        {
+            background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+            background-size: cover;
+            background-position:center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .photoactivités4
+        {
+            background-image: url("./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+            background-size: cover;
+            background-position:center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;  
+        }
+
+        .photoactivités5
+        {
+            background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+            background-size: cover;
+            background-position:center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .photoactivités6
+        {
+            background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+            background-size: cover;
+            background-position:center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;   
+        }
+
+        .hebergements
+        {
+            
+            height: 650px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; 
+            order: 2; 
+            background-color: white;    
+        }
+
+        .bloc1
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloc2
+        {
+            display: flex;
+            flex-direction: column;
+            margin-top: -15px;
+        }
+
+        .cartehebergement
+        {
+            width: 340px;
+            margin-bottom: 35px;
+            box-shadow: 5px 5px 5px 1px #f2f2f2 ;
+        }
+
+        .imagehebergement1
+        {
+            background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .imagehebergement2
+        {
+            background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .imagehebergement3
+        {
+            background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .imagehebergement4
+        {
+            background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .imagehebergement5
+        {
+            background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .imagehebergement6
+        {
+            background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .afficherplus
+        {
+            font-size: 18px;
+            padding-top: -40px;
+            
+            
+        }
+        .populaire
+        {
+
+            height: 650px;
+            background-color: #f2f2f2;
+            margin-top: -10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            order: 1;           
+        }
+
+        .hebergementetpop
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;  
+            
+        }
+
+        .cartepopulaire
+        {
+            width: auto;
+            height: auto;
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            border-radius: 20px;
+            border: 3px white solid;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            color: black;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+
+        .imagepopulaire1
+        {   
+            
+            background-image: url("./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 126px;
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        .imagepopulaire2
+        {
+            background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 126px;
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        .imagepopulaire3
+        {
+            background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 126px;
+            border-radius: 15px 0px 0px 15px;
+        }
+        
+        body
+        {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+}
+
 /* PARTIE MOBILE S/M */
- @media  screen and (max-width:375px) and (min-width:320px)
+ @media  screen and (max-width:375px) 
 {
         #logo
         {
@@ -903,8 +1384,9 @@ h3
         .liensnavigation
         {
             margin: 0px; 
-            width: 375px;
+            width: 102%;
             margin-top: -30px;
+            
         }
 
         .link_inscription
