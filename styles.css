@@ -139,7 +139,7 @@ h1
     border-top-color: #f2f2f2;
     border-bottom-color: #f2f2f2;
     color: black;
-    font-weight: 750;       
+    font-weight: 700;       
 }
 
 .boutonrecherche
@@ -168,7 +168,7 @@ h1
 #rechercher::placeholder
 {
     color: black;
-    font-weight: 750;
+    font-weight: 700;
     font-family: 'Raleway', sans-serif;
     padding-left: 10px;   
 }
@@ -189,7 +189,7 @@ h1
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-weight: 750;
+    font-weight: 700;
     font-size: 13px;  
     
 }
@@ -521,7 +521,7 @@ h1
     padding-left: 20px;
     padding-right: 30px;
     padding-bottom: 10px;
-    padding-top: -10px;
+    
 }
 
 /* SECTION "ACTIVITES A MARSEILLE" */
@@ -1287,7 +1287,7 @@ h3
         .afficherplus
         {
             font-size: 18px;
-            padding-top: -40px;
+            
             
             
         }
@@ -1766,10 +1766,7 @@ h3
 
         .afficherplus
         {
-            font-size: 18px;
-            padding-top: -40px;
-            
-            
+            font-size: 18px;  
         }
         .populaire
         {
