@@ -21,6 +21,6 @@ Le rendu final hébergé sur GitHub : [Réservia](https://laurentfacente.github.
 * Mettre en place son environnement Front-End
 * Intégrer du contenu conformément à une maquette
 * Implémenter une interface responsive
-* Respecter les [spécifications fonctionnelles et techniques](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P2+HTML+%26+CSS/DW+P2+-+Specifications+techniques+et+fonctionnelles.pdf "voir les spécifications")
+* Respecter les spécifications fonctionnelles et techniques fournies avec le brief
 
 ***
